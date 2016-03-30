@@ -1,13 +1,13 @@
 window.onload = indit;
 function indit(){
 
-   lista();
+   szulEv();
 
 }
-function lista(){
+function szulEv(){
   var i, selectv, szoveg, optionv, ldiv;
   var selectv = document.createElement("select");
-  selectv.setAttribute("name","lista");
+  selectv.setAttribute("name","Születési éve");
   for(i=1960; i<=2005; i++){
     var szoveg = document.createTextNode(i);
     var optionv = document.createElement("option");
