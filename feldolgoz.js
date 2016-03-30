@@ -10,7 +10,7 @@ function feldolgoz(){
       t[i] = t[i].split("=");
       for(var j=0; j<t[i].length;j++){
          t[i][j] = unescape(t[i][j]);
-         adatsor += "t["+i+","+j+"]:" +t[i][j] + "&nbsp; &nbsp;";
+         adatsor +=t[i][j] + "&nbsp; &nbsp;";
       }
     adatsor += "<br />";
   }
