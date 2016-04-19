@@ -3,39 +3,85 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <!--<link rel="stylesheet" type="text/css" href="stilus_a.css" />-->
-<title> Å°rlap </title>
+<title> Ûrlap </title>
 <meta http-equiv="Content-Type"
-           content="text/html;charset=UTF-8" />
-   <script type = "text/javascript"
-            src = "urlap.js"> </script>
+           content="text/html;charset=ISO-8859-2" />
+<script type = "text/javascript" src = "urlap.js"></script>
 </head>
 <body>
-  <h3>Å°rlap</h3>
-  <form id = "urlap" method = "get" action = "feldolgoz.html">
-  <div>
-<input name = "oldal" value = "velemenyezo" type = "hidden" />
+<h3>Háromszögek - ûrlap</h3>
+<form id = "urlap" method = "get" action = "feldolgoz.html">
+<div>
+<input name = "Feladatlap" value = "Háromszögek" type = "hidden" />
 </div>
-  <fieldset class = "adatok"> <legend> SzemÃ©lyes adatok </legend>
- <p>NÃ©v:
-  <input type="text" name="newname" size="20">
-  </p>
- <p>SzÃ¼letÃ©si Ã©v:
-    <div id = "listadiv"></div>
-    </p>
-</fieldset>
-<fieldset> <legend>ElsÅ‘ feladat: </legend>
-<p> Tetszett:
-  <label for = "tartalom" class = "chb">tartalom</label>
-  <input type = "checkbox" name = "tartalom"  id = "tartalom" class = "chbi" />
-  <label for = "kepek" class = "chb">kÃ©pek</label>
-  <input type = "checkbox" name = "kepek" id = "kepek" class = "chbi" />
-  <label for = "szinek" class = "chb">szÃ­nek</label>
-  <input type = "checkbox" name = "szinek" id = "szinek" class = "chbi" />
+<fieldset class = "adatok"> <legend> Személyes adatok </legend>
+<p>
+Név:
+<input type="text" name="Kitöltõ neve" size="20"/>
 </p>
+<p>
+</p>
+<div id = "listadiv"> Születési év: </div>
+</fieldset>
+<fieldset> <legend>1. </legend>
+<p id = "elsofeladat">
+A háromszög belsõ szögeinek össze?
+</p>
+<div>
+<input type = "radio" name = "kilencvenfok" id = "kilencvenfok" value = "90°" />
+<label for = "kilencvenfok"> 90°  </label>
+<br/>
+<input type = "radio" name = "száznyolcvanfok" id = "száznyolcvanfok" value = "180°" />
+<label for = "száznyolcvanfok"> 180°  </label>
+<br/>
+<input type = "radio" name = "háromszászhatvanfok" id = "háromszászhatvanfok" value = "360°" />
+<label for = "háromszászhatvanfok"> 360° </label>
+</div>
+
+</fieldset>
+
+<fieldset> <legend>2. </legend>
+<p id = "masodikfeladat"> 
+A háromszög egyértelmûen meghatározott, ha adott: (Jelölje be az igaz állításokat!)
+</p>
+<div>
+<input type = "checkbox" name = "Három_oldala"  id = "Három_oldala" class = "chbi" />
+<label for = "Három_oldala" class = "chb">Három oldala</label>
+<br/>
+<input type = "checkbox" name = "Két_oldala_és_az_egyiken_fekvõ_szög"  id = "Két_oldala_és_az_egyiken_fekvõ_szög" class = "chbi" />
+<label for = "Két_oldala_és_az_egyiken_fekvõ_szög" class = "chb">Két oldala és az egyiken fekvõ szög</label>
+<br/>
+<input type = "checkbox" name = "Egy_oldala_és_egy_szöge" id = "Egy_oldala_és_egy_szöge" class = "chbi" />
+<label for = "Egy_oldala_és_egy_szöge" class = "chb">Egy oldala és egy szöge</label>
+<br/>
+<input type = "checkbox" name = "Két_oldala_és_a_nagyobbal_szemközti_szöge" id = "Két_oldala_és_a_nagyobbal_szemközti_szöge" class = "chbi" />
+<label for = "Két_oldala_és_a_nagyobbal_szemközti_szöge" class = "chb">Két oldala és a nagyobbal szemközti szöge</label>
+<br/>
+<input type = "checkbox" name = "Egy_oldala_és_két_egyenlõ_szöge" id = "Egy_oldala_és_két_egyenlõ_szöge" class = "chbi" />
+<label for = "Egy_oldala_és_két_egyenlõ_szöge" class = "chb">Egy oldala és két egyenlõ szöge</label>
+</div>
+
+</fieldset>
+
+<fieldset> <legend>3. </legend>
+<p id = "harmadikfeladat">
+Milyen hosszú a derékszögû háromszög átfogója, ha a befogók hossza 4cm és 7cm?
+</p>
+<div class = "bevitel"> 
+   <label for = "Az_átfogó_hossza"> Az átfogó hossza:</label>
+   <input type="text" id = "Az_átfogó_hossza" name = "Az_átfogó_hossza" size="3" class = "ertek"/>
+</div>
+</fieldset>
+<fieldset> <legend>4. </legend>
+<p id = "negyedikfeladat">
+Mondja ki Pitagorasz tételét!
+</p>
+<div class = "bevitel"> 
+<textarea name="Pitagorasz_tétele" id="Pitagorasz_tétele"   rows = "3" cols = "42" > </textarea></div>
 </fieldset>
 <p>
-<input type = "reset" id = "torol" value = "TÃ¶rÃ¶l" />
-<input type = "submit" id = "elkuld" value = "ElkÃ¼ld" />
+<input type = "reset" id = "torol" value = "Töröl" />
+<input type = "submit" id = "elkuld" value = "Elküld" />
 </p>
 </form>
 </body>

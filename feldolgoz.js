@@ -8,9 +8,11 @@ function feldolgoz(){
   t = kif.split("&");
   for(var i=0; i<t.length;i++){
       t[i] = t[i].split("=");
-      for(var j=0; j<t[i].length;j++){
+      for(var j=0; j<t[i].length;j+=2){
          t[i][j] = unescape(t[i][j]);
-         adatsor += "t["+i+","+j+"]:" +t[i][j] + "&nbsp; &nbsp;";
+		 t[i][j+1] = unescape(t[i][j+1]);
+
+         adatsor +=t[i][j] +":"+ "&nbsp; "+t[i][j+1] + "&nbsp; ";
       }
     adatsor += "<br />";
   }
@@ -20,4 +22,3 @@ function feldolgoz(){
 function Vissza(){
   history.back();
 }
-
