@@ -3,53 +3,81 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <!--<link rel="stylesheet" type="text/css" href="stilus_a.css" />-->
-<title> Å°rlap </title>
+<title> Ûrlap </title>
 <meta http-equiv="Content-Type"
            content="text/html;charset=ISO-8859-2" />
 <script type = "text/javascript" src = "urlap.js"></script>
 </head>
 <body>
-<h3>Å°rlap</h3>
+<h3>Háromszögek - ûrlap</h3>
 <form id = "urlap" method = "get" action = "feldolgoz.html">
 <div>
-<input name = "Feladatlap" value = "Matematika" type = "hidden" />
+<input name = "Feladatlap" value = "Háromszögek" type = "hidden" />
 </div>
-<fieldset class = "adatok"> <legend> SzemÃ©lyes adatok </legend>
+<fieldset class = "adatok"> <legend> Személyes adatok </legend>
 <p>
-NÃ©v:
-<input type="text" name="Kitolto neve" size="20">
+Név:
+<input type="text" name="Kitöltõ neve" size="20">
 </p>
-<p>SzÃ¼letÃ©si Ã©v:
+<p>Születési éve:
 <div id = "listadiv"></div>
 </p>
 </fieldset>
-<fieldset> <legend>ElsÅ‘ feladat: </legend>
+<fieldset> <legend>1. </legend>
 <p id = "elsofeladat">
-Mennyi 2+3 ?
+A háromszög belsõ szögeinek össze?
 <div>
-<label for = "6"> 6  </label>
 <input type = "radio" name = "elsofeladat" id = "6" value = "6" />
-<label for = "5"> 5  </label>
+<label for = "90°"> 90°  </label>
+<br>
 <input type = "radio" name = "elsofeladat" id = "5" value = "5" />
-<label for = "4"> 4  </label>
+<label for = "180°"> 180°  </label>
+<br>
 <input type = "radio" name = "elsofeladat" id = "4" value = "4" />
-</div></p>
+<label for = "360°"> 360° </label>
+</div>
+</p>
 </fieldset>
 
-<fieldset> <legend>MÃ¡sodik feladat: </legend>
-<p id = "masodikfeladat"> Mennyi 2+3 ?
+<fieldset> <legend>2. </legend>
+<p id = "masodikfeladat"> 
+A háromszög egyértelmûen meghatározott, ha adott: (Jelölje be az igaz állításokat!)
 <div>
-<label for = "tartalom" class = "chb">6</label>
-<input type = "checkbox" name = "tartalom"  id = "tartalom" class = "chbi" />
-<label for = "kepek" class = "chb">5</label>
-<input type = "checkbox" name = "kepek" id = "kepek" class = "chbi" />
-<label for = "szinek" class = "chb">8</label>
-<input type = "checkbox" name = "szinek" id = "szinek" class = "chbi" />
-</div></p>
+<input type = "checkbox" name = "Három oldala"  id = "Három oldala" class = "chbi" />
+<label for = "Három oldala" class = "chb">Három oldala</label>
+<br>
+<input type = "checkbox" name = "Két oldala és az egyiken fekvõ szög"  id = "Két oldala és az egyiken fekvõ szög" class = "chbi" />
+<label for = "Egy oldala és egy szöge" class = "chb">Két oldala és az egyiken fekvõ szög</label>
+<br>
+<input type = "checkbox" name = "Egy oldala és egy szöge" id = "Egy oldala és egy szöge" class = "chbi" />
+<label for = "Egy oldala és egy szöge" class = "chb">Egy oldala és egy szöge</label>
+<br>
+<input type = "checkbox" name = "Két oldala és a nagyobbal szemközti szöge" id = "Két oldala és a nagyobbal szemközti szöge" class = "chbi" />
+<label for = "Két oldala és a nagyobbal szemközti szöge" class = "chb">Két oldala és a nagyobbal szemközti szöge</label>
+<br>
+<input type = "checkbox" name = "Egy oldala és két egyenlõ szöge" id = "Egy oldala és két egyenlõ szöge" class = "chbi" />
+<label for = "Egy oldala és két egyenlõ szöge" class = "chb">Egy oldala és két egyenlõ szöge</label>
+</div>
+</p>
+</fieldset>
+
+<fieldset> <legend>3. </legend>
+<p id = "harmadikfeladat">
+Milyen hosszú a derékszögû háromszög átfogója, ha a befogók hossza 4cm és 7cm?
+<div class = "bevitel"> 
+   <label for = " Az átfogó hossza"> Az átfogó hossza:</label>
+   <input type="text" id = " Az átfogó hossza" name = " Az átfogó hossza" size="3" class = "ertek"/>
+</div>
+</fieldset>
+<fieldset> <legend>4. </legend>
+<p id = "negyedikfeladat">
+Mondja ki Pitagorasz tételét!
+<div class = "bevitel"> 
+<textarea name="Pitagorasz tétele" id="Pitagorasz tétele"  rows = "3" cols = "42" > </textarea></div>
 </fieldset>
 <p>
-<input type = "reset" id = "torol" value = "TÃ¶rÃ¶l" />
-<input type = "submit" id = "elkuld" value = "ElkÃ¼ld" />
+<input type = "reset" id = "torol" value = "Töröl" />
+<input type = "submit" id = "elkuld" value = "Elküld" />
 </p>
 </form>
 </body>
