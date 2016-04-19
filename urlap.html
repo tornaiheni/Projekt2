@@ -17,63 +17,67 @@
 <fieldset class = "adatok"> <legend> Személyes adatok </legend>
 <p>
 Név:
-<input type="text" name="Kitöltõ neve" size="20">
+<input type="text" name="Kitöltõ neve" size="20"/>
 </p>
-<p>Születési éve:
-<div id = "listadiv"></div>
+<p>
 </p>
+<div id = "listadiv"> Születési év: </div>
 </fieldset>
 <fieldset> <legend>1. </legend>
 <p id = "elsofeladat">
 A háromszög belsõ szögeinek össze?
-<div>
-<input type = "radio" name = "elsofeladat" id = "6" value = "6" />
-<label for = "90°"> 90°  </label>
-<br>
-<input type = "radio" name = "elsofeladat" id = "5" value = "5" />
-<label for = "180°"> 180°  </label>
-<br>
-<input type = "radio" name = "elsofeladat" id = "4" value = "4" />
-<label for = "360°"> 360° </label>
-</div>
 </p>
+<div>
+<input type = "radio" name = "kilencvenfok" id = "kilencvenfok" value = "90°" />
+<label for = "kilencvenfok"> 90°  </label>
+<br/>
+<input type = "radio" name = "száznyolcvanfok" id = "száznyolcvanfok" value = "180°" />
+<label for = "száznyolcvanfok"> 180°  </label>
+<br/>
+<input type = "radio" name = "háromszászhatvanfok" id = "háromszászhatvanfok" value = "360°" />
+<label for = "háromszászhatvanfok"> 360° </label>
+</div>
+
 </fieldset>
 
 <fieldset> <legend>2. </legend>
 <p id = "masodikfeladat"> 
 A háromszög egyértelmûen meghatározott, ha adott: (Jelölje be az igaz állításokat!)
-<div>
-<input type = "checkbox" name = "Három oldala"  id = "Három oldala" class = "chbi" />
-<label for = "Három oldala" class = "chb">Három oldala</label>
-<br>
-<input type = "checkbox" name = "Két oldala és az egyiken fekvõ szög"  id = "Két oldala és az egyiken fekvõ szög" class = "chbi" />
-<label for = "Egy oldala és egy szöge" class = "chb">Két oldala és az egyiken fekvõ szög</label>
-<br>
-<input type = "checkbox" name = "Egy oldala és egy szöge" id = "Egy oldala és egy szöge" class = "chbi" />
-<label for = "Egy oldala és egy szöge" class = "chb">Egy oldala és egy szöge</label>
-<br>
-<input type = "checkbox" name = "Két oldala és a nagyobbal szemközti szöge" id = "Két oldala és a nagyobbal szemközti szöge" class = "chbi" />
-<label for = "Két oldala és a nagyobbal szemközti szöge" class = "chb">Két oldala és a nagyobbal szemközti szöge</label>
-<br>
-<input type = "checkbox" name = "Egy oldala és két egyenlõ szöge" id = "Egy oldala és két egyenlõ szöge" class = "chbi" />
-<label for = "Egy oldala és két egyenlõ szöge" class = "chb">Egy oldala és két egyenlõ szöge</label>
-</div>
 </p>
+<div>
+<input type = "checkbox" name = "Három_oldala"  id = "Három_oldala" class = "chbi" />
+<label for = "Három_oldala" class = "chb">Három oldala</label>
+<br/>
+<input type = "checkbox" name = "Két_oldala_és_az_egyiken_fekvõ_szög"  id = "Két_oldala_és_az_egyiken_fekvõ_szög" class = "chbi" />
+<label for = "Két_oldala_és_az_egyiken_fekvõ_szög" class = "chb">Két oldala és az egyiken fekvõ szög</label>
+<br/>
+<input type = "checkbox" name = "Egy_oldala_és_egy_szöge" id = "Egy_oldala_és_egy_szöge" class = "chbi" />
+<label for = "Egy_oldala_és_egy_szöge" class = "chb">Egy oldala és egy szöge</label>
+<br/>
+<input type = "checkbox" name = "Két_oldala_és_a_nagyobbal_szemközti_szöge" id = "Két_oldala_és_a_nagyobbal_szemközti_szöge" class = "chbi" />
+<label for = "Két_oldala_és_a_nagyobbal_szemközti_szöge" class = "chb">Két oldala és a nagyobbal szemközti szöge</label>
+<br/>
+<input type = "checkbox" name = "Egy_oldala_és_két_egyenlõ_szöge" id = "Egy_oldala_és_két_egyenlõ_szöge" class = "chbi" />
+<label for = "Egy_oldala_és_két_egyenlõ_szöge" class = "chb">Egy oldala és két egyenlõ szöge</label>
+</div>
+
 </fieldset>
 
 <fieldset> <legend>3. </legend>
 <p id = "harmadikfeladat">
 Milyen hosszú a derékszögû háromszög átfogója, ha a befogók hossza 4cm és 7cm?
+</p>
 <div class = "bevitel"> 
-   <label for = " Az átfogó hossza"> Az átfogó hossza:</label>
-   <input type="text" id = " Az átfogó hossza" name = " Az átfogó hossza" size="3" class = "ertek"/>
+   <label for = "Az_átfogó_hossza"> Az átfogó hossza:</label>
+   <input type="text" id = "Az_átfogó_hossza" name = "Az_átfogó_hossza" size="3" class = "ertek"/>
 </div>
 </fieldset>
 <fieldset> <legend>4. </legend>
 <p id = "negyedikfeladat">
 Mondja ki Pitagorasz tételét!
+</p>
 <div class = "bevitel"> 
-<textarea name="Pitagorasz tétele" id="Pitagorasz tétele"  rows = "3" cols = "42" > </textarea></div>
+<textarea name="Pitagorasz_tétele" id="Pitagorasz_tétele"   rows = "3" cols = "42" > </textarea></div>
 </fieldset>
 <p>
 <input type = "reset" id = "torol" value = "Töröl" />
