@@ -13,13 +13,24 @@ function feldolgoz(){
                for(var k=0; k<t[i][j].length;k++){
 				t[i][j] = unescape(t[i][j]);
 				t[i][j+1] = unescape(t[i][j+1]);
-	 }
-
-         adatsor +=t[i][j] +":"+ "&nbsp; "+t[i][j+1] + "&nbsp; ";
+				}
+			
+			feladatlap=t[0][0]+":"+"&nbsp; "+t[0][1]+"<br />"+"<br />";
+			
+			nev=t[1][0]+":"+"&nbsp; "+t[1][1]+"<br />";
+			
+			var d = new Date();
+			ev= d.getFullYear();
+			kor=ev-t[2][1];
       }
-    adatsor += "<br />";
+    
   }
-  document.getElementById("AdatKiir").innerHTML = adatsor;
+   document.getElementById("AdatKiir").innerHTML = feladatlap+nev+"Kora:"+"&nbsp; "+kor+"<br />"+"<br />";
+   document.getElementById("Elsofeladat").innerHTML="&nbsp; "+t[3][1]+"<br />";
+   document.getElementById("Masodikfeladat").innerHTML="&nbsp; "+t[4][1]+"<br />"+"&nbsp; "+t[5][1]+"<br />";
+   document.getElementById("Harmadikfeladat").innerHTML="&nbsp; "+t[6][1]+" cm"+"<br />";
+   document.getElementById("Negyedikfeladat").innerHTML="&nbsp; "+t[7][1]+"<br />";
+
   document.getElementById("Vissza").onclick = Vissza;
 }
 function Vissza(){
